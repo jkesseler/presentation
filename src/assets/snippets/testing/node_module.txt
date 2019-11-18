@@ -1,0 +1,11 @@
+// __mocks__/react-native.js
+const ReactNative = require('react-native');
+
+// Overwrite an API with mock implementation
+ReactNative.Dimensions = {
+	get: () => {
+		jest.fn().mockReturnValue({ width: 1080, height: 1980 });
+	},
+};
+
+module.exports = ReactNative;

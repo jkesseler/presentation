@@ -1,0 +1,6 @@
+t('key', {count: 0}); // -> "items"
+t('key', {count: 1}); // -> "item"
+t('key', {count: 5}); // -> "items"
+t('keyWithCount', {count: 0}); // -> "0 items"
+t('keyWithCount', {count: 1}); // -> "1 item"
+t('keyWithCount', {count: 5}); // -> "5 items"

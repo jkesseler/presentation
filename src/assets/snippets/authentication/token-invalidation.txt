@@ -1,0 +1,9 @@
+import NavigationService from '@services/navigation-service';
+
+instance.interceptors.response.use(response => response, error => {
+	if(error?.response?.status === HttpStatus.UNAUTHORIZED) {
+		NavigationService.navigate('Login'); // important bit
+		return false;
+	}
+	return error;
+});

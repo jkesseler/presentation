@@ -1,0 +1,12 @@
+{
+  "nl": {
+    "agenda": {
+      "leerling": "leerling"
+    }
+  },
+  "en" : {
+    "agenda": {
+      "leerling": "student"
+    }
+  }
+}

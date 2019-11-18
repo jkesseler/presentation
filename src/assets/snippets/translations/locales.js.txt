@@ -1,0 +1,10 @@
+import { merge } from 'lodash';
+import AgendaScreenLocale from '@screens/agenda/locale.json';
+import NavigationLocale from '@navigation/main-tab-navigator/locale.json';
+
+const localeResources = merge(
+  AgendaScreenLocale,
+  NavigationLocale,
+);
+
+export { localeResources };

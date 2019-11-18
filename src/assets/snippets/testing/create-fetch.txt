@@ -1,0 +1,7 @@
+// unit under test
+import NavigationService from '@services/navigation-service';
+
+async function someFunction(/* ... */) {
+  /* ... */
+  NavigationService.navigate();
+}

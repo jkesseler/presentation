@@ -1,0 +1,19 @@
+export const Agenda = ({ navigation }) => {
+  const appointment = {
+    startDate: '12 september 2019',
+  }
+
+  navigateToDetails = () => {
+    // The second parameter is data passed to AgendaDetailsScreen
+    navigation.navigate('AgendaDetails', { appointment });
+  };
+
+  return (
+    <View>
+      <Button
+        onPress={navigateToDetails}
+        title="Go to details"
+      />
+    </View>
+  );
+}

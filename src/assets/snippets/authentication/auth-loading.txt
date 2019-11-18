@@ -1,0 +1,21 @@
+import { useAuth } from '@hooks/use-provide-auth';
+const auth = useAuth();
+
+export const AuthLoadingScreen = ({ navigation }) => {
+	useEffect(() => {
+		const onMount = async () => {
+			const token = await AsyncStorage.getItem('token');
+
+			// Super awesome cool validation
+			if(token !== null) {
+				auth.setCredentials(/* handle, user, */, token)
+				navigation.navigate('Main');
+			} else {
+				navigation.navigate('Login');
+			}
+		};
+		onMount();
+	}, []);
+
+	return ( /* ... */);
+};

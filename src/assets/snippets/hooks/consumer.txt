@@ -1,0 +1,10 @@
+import { ProvideStudents } from '@hooks/use-provide-auth/use-provide-students';
+import { StudentsScreen } from '@screens/students-screen';
+
+const MyComponent = () => {
+  return (
+    <ProvideStudents>
+      <StudentsScreen />
+    </<ProvideStudents>
+  )
+}

@@ -1,0 +1,26 @@
+{
+  "extends": ["react-app"],
+  "parserOptions": {
+    "ecmaVersion": 8
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+  },
+  "rules": {
+    "complexity": ["warn", 10],
+    "indent": ["error", 2],
+    "import/imports-first": ["error", "absolute-first"],
+    "import/newline-after-import": "error",
+    "import/no-extraneous-dependencies": ["error", {"devDependencies": ["*/setupTests.js", "**/__tests__/*"]}],
+    // This rule conflicts exporting connected components
+    // https://github.com/benmosher/eslint-plugin-import/issues/544#issuecomment-244976007
+    "import/no-named-as-default": ["off"],
+    "max-depth": ["warn", 3],
+    "no-underscore-dangle": ["error", { "allow": ["__INITIAL_STATE__"] }],
+    "react/jsx-filename-extension": ["error", { "extensions": [".js", ".jsx"] }],
+    // This rule invalidates all nested jsx *and* html childs
+    "react/jsx-one-expression-per-line": ["off"],
+    "react/prop-types": ["error", { customValidators: ["skipUndeclared"] } ],
+  }
+}

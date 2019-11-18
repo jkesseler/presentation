@@ -1,0 +1,16 @@
+const SettingsStack = createStackNavigator({
+	Settings: SettingsScreen,
+	SettingsContact: SettingsContactScreen,
+	SettingsAbout: SettingsAboutScreen,
+	SettingsPrivacy: SettingsPrivacyScreen,
+	SettingsOpenSource: SettingsOpenSourceScreen,
+}, stackNavigatorOptions);
+SettingsStack.navigationOptions = () => ({
+	tabBarLabel:'Settings',
+	tabBarIcon: ({ focused }) => (
+		<TabbarIcon
+			focused={focused}
+			name="cogwheel"
+		/>
+	),
+});

@@ -1,0 +1,13 @@
+export const AgendaDetailsScreen = ({ navigation }) => {
+  const appointment = navigation.getParam('appointment');
+
+  return (
+    <View>
+      <View>
+        <Text>Start date</Text>
+        <Text>{appointment.startDate}</Text>
+      </View>
+      <Button onPress={goBack} title="Go back" />
+    </View>
+  );
+}

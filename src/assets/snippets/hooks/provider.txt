@@ -1,0 +1,29 @@
+// use-provide-students.js
+
+/* Create the context */
+const studentsContext = createContext();
+
+/* State and side-effects */
+function useProvideStudents() {
+  // Create an empty list
+  const [studentList, setStudentList] = useState([]);
+
+  const load = () => { /* get data from endpoint and fill list */}
+
+  // make `load()` and `studentList` available on the context
+  return {
+    load,
+    studentList,
+  }
+}
+
+/* Create context provider and setup state */
+export function ProvideStudents({ children }) {
+  const students = useProvideStudents();
+
+  return (
+    <studentsContext.Provider value={students}>
+      {children}
+    </studentsContext.Provider>
+  );
+}

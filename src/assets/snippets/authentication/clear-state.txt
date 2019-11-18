@@ -1,0 +1,11 @@
+export const LoginScreen = ({ navigation }) => {
+	const auth = useAuth();
+
+  useEffect(() => {
+    const onMount = async () => {
+      auth.clearToken();
+
+    };
+    onMount();
+  }, []);
+}

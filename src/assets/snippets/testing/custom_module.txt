@@ -1,0 +1,5 @@
+// __mocks__/@services/navigation-service.js
+export default {
+	navigate: () => jest.fn(),
+	setTopLevelNavigator: () => jest.fn(),
+};

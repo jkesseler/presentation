@@ -1,0 +1,10 @@
+export const MyScreen = ({ navigation }) => {
+  return (
+    <View>
+      <Button
+        title="Go to Page"
+        onPress={() => navigation.navigate('Routename')}
+      />
+    </View>
+  );
+}

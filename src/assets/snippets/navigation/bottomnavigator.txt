@@ -1,0 +1,15 @@
+const AgendaStack = createStackNavigator({
+	Agenda: AgendaScreen,
+	AgendaDetails: AgendaDetailsScreen
+});
+
+const SettingsStack = createStackNavigator({
+	Settings: SettingsScreen,
+	SettingsContact: SettingsContactScreen,
+	SettingsAbout: SettingsAboutScreen,
+});
+
+const MainTabNavigator = createBottomTabNavigator({
+	AgendaStack,
+	SettingsStack,
+});

@@ -1,0 +1,19 @@
+const MyScreen = ({ navigation }) {
+  const navigateToDetails = async () => {
+    navigation.navigate('NestedDetailsScreen', {
+      backKey: 'MyScreenNavigationKey', // Add a backKey
+    });
+  };
+
+  return (/* ... */);
+}
+
+const NestedDetailsScreen = ({ navigation }) => {
+    const goBack = () {
+      const backKey = navigation.getParam('backKey');
+      navigation.setParams({ backKey: null });  // IMPORTANT, clear the backKey!
+      navigation.navigate(backKey);
+    }
+
+    return (/* ... */);
+}

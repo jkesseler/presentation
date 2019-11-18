@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Nutmeg Bold';
+    src: url('./assets/fonts/Nutmeg-Bold.woff2') format('woff2'),
+         url('./assets/fonts/Nutmeg-Bold.woff') format('woff'),
+         url('./assets/fonts/Nutmeg-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Nutmeg Extra Bold';
+    src: url('./assets/fonts/Nutmeg-ExtraBold.woff2') format('woff2'),
+        url('./assets/fonts/Nutmeg-ExtraBold.woff') format('woff'),
+        url('./assets/fonts/Nutmeg-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nutmeg Light';
+    src: url('./assets/fonts/Nutmeg-Light.woff2') format('woff2'),
+        url('./assets/fonts/Nutmeg-Light.woff') format('woff'),
+        url('./assets/fonts/Nutmeg-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Operator Mono Lig';
+    src: url('./assets/fonts/OperatorMonoLig-Book.otf') format('otf'),
+}
+
+h1, h2 {
+  font-family: 'Nutmeg Extra Bold';
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Nutmeg Bold';
+}
